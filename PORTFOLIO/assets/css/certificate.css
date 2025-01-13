@@ -1,0 +1,66 @@
+.certificate{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.certificado-grid{
+    display: grid;
+    grid-template-columns: 3fr 1fr ;
+    padding: 10px;
+    border: 1px solid rgb(148, 145, 145);
+    border-radius: 10px;
+    margin: 0;
+}
+
+description-certificate,
+period-certificate{
+    margin: 0 auto;
+}
+
+.certificate li{
+    margin-bottom: 2rem;
+}
+
+.certificate li .period{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.certificate li .period-certificate::before{
+    content: '';
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    background-image: url('../img/icons/calendario.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: .5rem;
+}
+
+.description{
+    margin-top: 0;
+}
+
+.certificado-img{
+    margin: 0 auto;
+    width: 11rem;
+    height: 6rem;
+}
+
+
+@media only screen and (max-width: 712px) { 
+
+    .certificado-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .certificado-img{
+        margin: 0;
+    }
+}
+
