@@ -1,5 +1,4 @@
-
-.academico{
+.academico {
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -7,17 +6,17 @@
     list-style: none;
 }
 
-.academico li{
+.academico li {
     margin-bottom: 1rem;
 }
 
-.academico li .period{
+.academico li .period {
     display: flex;
     flex-direction: row;
     align-items: center;
 }
 
-.academico li .period::before{
+.academico li .period::before {
     content: '';
     display: inline-block;
     width: 1rem;
@@ -28,6 +27,6 @@
     margin-right: .5rem;
 }
 
-.description{
+.description {
     margin-top: 0;
 }
